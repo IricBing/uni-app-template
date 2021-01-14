@@ -1,0 +1,58 @@
+{
+  "editor.detectIndentation": false, // vscode默认启用了根据文件类型自动设置tabsize的选项
+  "editor.tabSize": 2, // 重新设定tabsize
+  "editor.formatOnSave": true, // #每次保存的时候自动格式化
+  "window.zoomLevel": 0,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "vetur.validation.template": false, // 使用eslint插件时需要把此项设置为false
+  "vetur.validation.script": true, //检查js代码
+  "vetur.validation.style": true, //能检查css的属性是否存在,分隔符是否正确，
+  "vetur.format.defaultFormatter.html": "js-beautify-html", //默认采用js-beautify-html格式化
+  "vetur.format.defaultFormatterOptions": {
+    //对vue文件html的格式化，对js的格式化在全局的prettierrc.json文件控制
+    "js-beautify-html": {
+      "wrap_attributes": "auto",
+      "indent_size": 2, //缩进大小
+      "indent_char": " ", //缩进字符
+      "indent_with_tabs": false,
+      "eol": "\n", // 用作行终止的字符，默认为\n
+      "end_with_newline": true, //是否用换行符结束
+      "preserve_newlines": true, // 是否保留现有的换行符
+      "max-preserve-newlines": 40, // 一次可保留的最大换行数
+      "indent-inner-html": true, //缩进 head body代码片段
+      "wrap_line_length": 1200, //超过多少字符换行
+      "editorconfig": false //使用editorconfig设置选项
+    }
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "prettier.semi": true,
+  "prettier.singleQuote": true,
+  "html.format.maxPreserveNewLines": 40,
+  "html.format.enable": false,
+  "cSpell.words": [
+    "appender",
+    "disturl",
+    "mixins",
+    "nprogress",
+    "screenfull",
+    "submenu",
+    "vuex"
+  ]
+}
