@@ -31,3 +31,8 @@ yarn-error.log*
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+# VSCode uniapp 代码块
+!.vscode/css.code-snippets
+!.vscode/js.code-snippets
+!.vscode/vue-html.code-snippets
