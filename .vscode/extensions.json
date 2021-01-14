@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "streetsidesoftware.code-spell-checker",
+    "mikestead.dotenv",
+    "hookyqr.beautify",
+    "dbaeumer.vscode-eslint",
+    "octref.vetur",
+    "wayou.vscode-todo-highlight",
+    "gruntfuggly.todo-tree",
+    "esbenp.prettier-vscode"
+  ]
+}
