@@ -1,19 +1,5 @@
-# my-project
+# `uni-app` 样板工程
 
-## Project setup
-```
-yarn install
-```
+## 目录
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+* [项目搭建流程](docs/项目搭建流程.md)
