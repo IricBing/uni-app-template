@@ -1,16 +1,60 @@
 {
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "demo",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
   "pages": [
     {
-      "path": "pages/index/index",
+      "path": "pages/user/register",
       "style": {
-        "navigationBarTitleText": "uni-app"
+        "navigationBarTitleText": "注册"
+      }
+    },
+    {
+      "path": "pages/user/login",
+      "style": {
+        "navigationBarTitleText": "登录"
       }
     }
   ],
-  "globalStyle": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8"
-  }
+  "subpackages": [
+    {
+      "root": "subpackages/app1",
+      "name": "app1",
+      "pages": [
+        {
+          "path": "pages/user/register",
+          "style": {
+            "navigationBarTitleText": "注册"
+          }
+        },
+        {
+          "path": "pages/user/login",
+          "style": {
+            "navigationBarTitleText": "登录"
+          }
+        }
+      ]
+    },
+    {
+      "root": "subpackages/app2",
+      "name": "app2",
+      "pages": [
+        {
+          "path": "pages/user/register",
+          "style": {
+            "navigationBarTitleText": "注册"
+          }
+        },
+        {
+          "path": "pages/user/login",
+          "style": {
+            "navigationBarTitleText": "登录"
+          }
+        }
+      ]
+    }
+  ]
 }
