@@ -1613,7 +1613,7 @@
     "@types/istanbul-lib-coverage" "*"
     "@types/istanbul-lib-report" "*"
 
-"@types/json-schema@^7.0.5":
+"@types/json-schema@^7.0.5", "@types/json-schema@^7.0.6":
   version "7.0.6"
   resolved "https://registry.npm.taobao.org/@types/json-schema/download/@types/json-schema-7.0.6.tgz#f4c7ec43e81b319a9815115031709f26987891f0"
   integrity sha1-9MfsQ+gbMZqYFRFQMXCfJph4kfA=
@@ -2294,7 +2294,7 @@ ajv-keywords@^3.1.0, ajv-keywords@^3.4.1, ajv-keywords@^3.5.2:
   resolved "https://registry.npm.taobao.org/ajv-keywords/download/ajv-keywords-3.5.2.tgz?cache=0&sync_timestamp=1608062612017&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fajv-keywords%2Fdownload%2Fajv-keywords-3.5.2.tgz#31f29da5ab6e00d1c2d329acf7b5929614d5014d"
   integrity sha1-MfKdpatuANHC0yms97WSlhTVAU0=
 
-ajv@^6.1.0, ajv@^6.10.0, ajv@^6.10.2, ajv@^6.12.3, ajv@^6.12.4:
+ajv@^6.1.0, ajv@^6.10.0, ajv@^6.10.2, ajv@^6.12.3, ajv@^6.12.4, ajv@^6.12.5:
   version "6.12.6"
   resolved "https://registry.npm.taobao.org/ajv/download/ajv-6.12.6.tgz?cache=0&sync_timestamp=1609583976611&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fajv%2Fdownload%2Fajv-6.12.6.tgz#baf5a62e802b07d977034586f8c3baf5adf26df4"
   integrity sha1-uvWmLoArB9l3A0WG+MO69a3ybfQ=
@@ -3185,6 +3185,21 @@ check-types@^8.0.3:
   version "8.0.3"
   resolved "https://registry.npm.taobao.org/check-types/download/check-types-8.0.3.tgz#3356cca19c889544f2d7a95ed49ce508a0ecf552"
   integrity sha1-M1bMoZyIlUTy16le1JzlCKDs9VI=
+
+"chokidar@>=2.0.0 <4.0.0":
+  version "3.5.1"
+  resolved "https://registry.npm.taobao.org/chokidar/download/chokidar-3.5.1.tgz?cache=0&sync_timestamp=1610719384066&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fchokidar%2Fdownload%2Fchokidar-3.5.1.tgz#ee9ce7bbebd2b79f49f304799d5468e31e14e68a"
+  integrity sha1-7pznu+vSt59J8wR5nVRo4x4U5oo=
+  dependencies:
+    anymatch "~3.1.1"
+    braces "~3.0.2"
+    glob-parent "~5.1.0"
+    is-binary-path "~2.1.0"
+    is-glob "~4.0.1"
+    normalize-path "~3.0.0"
+    readdirp "~3.5.0"
+  optionalDependencies:
+    fsevents "~2.3.1"
 
 chokidar@^2.1.8:
   version "2.1.8"
@@ -7013,6 +7028,11 @@ kleur@^3.0.3:
   resolved "https://registry.npm.taobao.org/kleur/download/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
   integrity sha1-p5yezIbuHOP6YgbRIWxQHxR/wH4=
 
+klona@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.npm.taobao.org/klona/download/klona-2.0.4.tgz#7bb1e3affb0cb8624547ef7e8f6708ea2e39dfc0"
+  integrity sha1-e7Hjr/sMuGJFR+9+j2cI6i4538A=
+
 koa-body@^4.0.8:
   version "4.2.0"
   resolved "https://registry.npm.taobao.org/koa-body/download/koa-body-4.2.0.tgz#37229208b820761aca5822d14c5fc55cee31b26f"
@@ -7768,7 +7788,7 @@ negotiator@0.6.2:
   resolved "https://registry.npm.taobao.org/negotiator/download/negotiator-0.6.2.tgz#feacf7ccf525a77ae9634436a64883ffeca346fb"
   integrity sha1-/qz3zPUlp3rpY0Q2pkiD/+yjRvs=
 
-neo-async@^2.5.0, neo-async@^2.6.0, neo-async@^2.6.1:
+neo-async@^2.5.0, neo-async@^2.6.0, neo-async@^2.6.1, neo-async@^2.6.2:
   version "2.6.2"
   resolved "https://registry.npm.taobao.org/neo-async/download/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha1-tKr7k+OustgXTKU88WOrfXMIMF8=
@@ -9631,6 +9651,24 @@ sane@^4.0.3:
     minimist "^1.1.1"
     walker "~1.0.5"
 
+sass-loader@^10.1.1:
+  version "10.1.1"
+  resolved "https://registry.npm.taobao.org/sass-loader/download/sass-loader-10.1.1.tgz?cache=0&sync_timestamp=1610373188078&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsass-loader%2Fdownload%2Fsass-loader-10.1.1.tgz#4ddd5a3d7638e7949065dd6e9c7c04037f7e663d"
+  integrity sha1-Td1aPXY455SQZd1unHwEA39+Zj0=
+  dependencies:
+    klona "^2.0.4"
+    loader-utils "^2.0.0"
+    neo-async "^2.6.2"
+    schema-utils "^3.0.0"
+    semver "^7.3.2"
+
+sass@^1.32.4:
+  version "1.32.4"
+  resolved "https://registry.npm.taobao.org/sass/download/sass-1.32.4.tgz?cache=0&sync_timestamp=1610415255306&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsass%2Fdownload%2Fsass-1.32.4.tgz#308bf29dd7f53d44ae4f06580e9a910ad9aa411e"
+  integrity sha1-MIvyndf1PUSuTwZYDpqRCtmqQR4=
+  dependencies:
+    chokidar ">=2.0.0 <4.0.0"
+
 sax@~1.2.4:
   version "1.2.4"
   resolved "https://registry.npm.taobao.org/sax/download/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
@@ -9659,6 +9697,15 @@ schema-utils@^2.0.0, schema-utils@^2.5.0, schema-utils@^2.6.5, schema-utils@^2.6
   dependencies:
     "@types/json-schema" "^7.0.5"
     ajv "^6.12.4"
+    ajv-keywords "^3.5.2"
+
+schema-utils@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npm.taobao.org/schema-utils/download/schema-utils-3.0.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fschema-utils%2Fdownload%2Fschema-utils-3.0.0.tgz#67502f6aa2b66a2d4032b4279a2944978a0913ef"
+  integrity sha1-Z1AvaqK2ai1AMrQnmilEl4oJE+8=
+  dependencies:
+    "@types/json-schema" "^7.0.6"
+    ajv "^6.12.5"
     ajv-keywords "^3.5.2"
 
 select-hose@^2.0.0:
@@ -11069,7 +11116,7 @@ vue@^2.6.11, vue@^2.6.8:
   resolved "https://registry.npm.taobao.org/vue/download/vue-2.6.12.tgz#f5ebd4fa6bd2869403e29a896aed4904456c9123"
   integrity sha1-9evU+mvShpQD4pqJau1JBEVskSM=
 
-vuex@^3.2.0:
+vuex@^3.6.0:
   version "3.6.0"
   resolved "https://registry.npm.taobao.org/vuex/download/vuex-3.6.0.tgz?cache=0&sync_timestamp=1606318339710&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvuex%2Fdownload%2Fvuex-3.6.0.tgz#95efa56a58f7607c135b053350833a09e01aa813"
   integrity sha1-le+lalj3YHwTWwUzUIM6CeAaqBM=
