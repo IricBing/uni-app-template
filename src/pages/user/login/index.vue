@@ -1,6 +1,7 @@
 <template>
   <view class="div">
-    {{ name }}
+    <!-- {{ name }} -->
+    主应用登录页面
   </view>
 </template>
 

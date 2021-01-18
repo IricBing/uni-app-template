@@ -1,6 +1,7 @@
 <template>
   <view class="div">
-    {{ name }}
+    <!-- {{ name }} -->
+    子应用2注册页面
   </view>
 </template>
 

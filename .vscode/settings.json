@@ -67,14 +67,23 @@
   "html.format.maxPreserveNewLines": 40,
   "html.format.enable": false,
   "cSpell.words": [
+    "Iric",
     "appender",
+    "browserslist",
+    "dcloudio",
     "disturl",
+    "flyio",
+    "ifdef",
+    "ifndef",
+    "miniprogram",
     "mixins",
     "nprogress",
     "screenfull",
     "subapp",
     "submenu",
     "subpackages",
-    "vuex"
+    "uniapp",
+    "vuex",
+    "weixin"
   ]
 }

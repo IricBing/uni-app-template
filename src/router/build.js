@@ -4,18 +4,19 @@ const router = require('./index.js');
 const subapp1 = require('./modules/subapp1');
 const subapp2 = require('./modules/subapp2');
 
-const builder = (baseUrl, children) => {
+const builder = (app, baseUrl, children) => {
   const routeList = [];
   for (const route of children) {
     if (route.children) routeList.push(...builder(baseUrl + route.path + '/', route.children));
     else {
       const item = {
-        path: baseUrl + route.path,
+        path: baseUrl + route.path + '/index',
+        name: app + '/' + route.name,
         style: {
-          navigationBarTitleText: route.name
+          navigationBarTitleText: route.title
         }
       };
-      Object.keys(route).forEach(prop => !['path', 'name'].includes(prop) && (obj.style[prop] = route[prop]));
+      Object.keys(route).forEach(prop => !['path', 'name', 'title'].includes(prop) && (item[prop] = route[prop]));
       routeList.push(item);
     }
   }
@@ -24,23 +25,23 @@ const builder = (baseUrl, children) => {
 };
 
 // 将路由模块配置文件转化为 uniapp 配置文件格式
-const buildRouter = route => {
+const buildRouter = (app, route) => {
   const { baseUrl, children } = route;
 
-  return builder(baseUrl, children);
+  return builder(app, baseUrl, children);
 };
 
 // 构建 pages
 router.pages = readdirSync(resolve(__dirname, './modules/app'))
-  .map(filename => buildRouter(require('./modules/app/' + filename)))
+  .map(filename => buildRouter('app', require('./modules/app/' + filename)))
   .flat();
 subapp1.pages = readdirSync(resolve(__dirname, './modules/subapp1'))
   .filter(filename => filename !== 'index.js')
-  .map(filename => buildRouter(require('./modules/subapp1/' + filename)))
+  .map(filename => buildRouter('subapp1', require('./modules/subapp1/' + filename)))
   .flat();
 subapp2.pages = readdirSync(resolve(__dirname, './modules/subapp2'))
   .filter(filename => filename !== 'index.js')
-  .map(filename => buildRouter(require('./modules/subapp2/' + filename)))
+  .map(filename => buildRouter('subapp2', require('./modules/subapp2/' + filename)))
   .flat();
 
 router.subpackages = [subapp1, subapp2];

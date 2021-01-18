@@ -7,13 +7,15 @@
   },
   "pages": [
     {
-      "path": "pages/user/register",
+      "path": "pages/user/register/index",
+      "name": "app/register",
       "style": {
         "navigationBarTitleText": "注册"
       }
     },
     {
-      "path": "pages/user/login",
+      "path": "pages/user/login/index",
+      "name": "app/login",
       "style": {
         "navigationBarTitleText": "登录"
       }
@@ -25,13 +27,15 @@
       "name": "app1",
       "pages": [
         {
-          "path": "pages/user/register",
+          "path": "pages/user/register/index",
+          "name": "subapp1/register",
           "style": {
             "navigationBarTitleText": "注册"
           }
         },
         {
-          "path": "pages/user/login",
+          "path": "pages/user/login/index",
+          "name": "subapp1/login",
           "style": {
             "navigationBarTitleText": "登录"
           }
@@ -43,13 +47,15 @@
       "name": "app2",
       "pages": [
         {
-          "path": "pages/user/register",
+          "path": "pages/user/register/index",
+          "name": "subapp2/register",
           "style": {
             "navigationBarTitleText": "注册"
           }
         },
         {
-          "path": "pages/user/login",
+          "path": "pages/user/login/index",
+          "name": "subapp2/login",
           "style": {
             "navigationBarTitleText": "登录"
           }

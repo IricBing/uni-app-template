@@ -3,11 +3,13 @@ module.exports = {
   children: [
     {
       path: 'register',
-      name: '注册'
+      title: '注册',
+      name: 'register'
     },
     {
       path: 'login',
-      name: '登录'
+      title: '登录',
+      name: 'login'
     }
   ]
 };
