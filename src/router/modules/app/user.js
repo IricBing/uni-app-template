@@ -4,7 +4,13 @@ module.exports = {
     {
       path: 'register',
       title: '注册',
-      name: 'register'
+      name: 'register',
+      style: {
+        navigationBarTextStyle: 'black'
+      },
+      meta: {
+        guard: ['userRegister']
+      }
     },
     {
       path: 'login',
