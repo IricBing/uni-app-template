@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import App from './App';
 import { router, RouterMount } from './router/guard';
+import store from './store';
 
 Vue.use(router);
 
@@ -10,7 +11,8 @@ App.mpType = 'app';
 
 const app = new Vue({
   ...App,
-  router
+  router,
+  store
 });
 
 //v1.3.5起 H5端 你应该去除原有的app.$mount();使用路由自带的渲染方式
