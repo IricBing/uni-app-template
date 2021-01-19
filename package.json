@@ -61,6 +61,7 @@
     "@vue/shared": "^3.0.0",
     "core-js": "^3.6.5",
     "flyio": "^0.6.2",
+    "luch-request": "^3.0.5",
     "regenerator-runtime": "^0.12.1",
     "uni-read-pages": "^1.0.5",
     "uni-simple-router": "^2.0.0-beta.8",
@@ -114,7 +115,7 @@
     }
   },
   "lint-staged": {
-    "src/**.{js,vue}": [
+    "src/**/*.{js,vue}": [
       "cross-env NODE_ENV=production vue-cli-service lint"
     ]
   }

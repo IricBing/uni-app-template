@@ -884,7 +884,7 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@dcloudio/types@*":
+"@dcloudio/types@*", "@dcloudio/types@^2.0.16":
   version "2.0.21"
   resolved "https://registry.npm.taobao.org/@dcloudio/types/download/@dcloudio/types-2.0.21.tgz?cache=0&sync_timestamp=1610520111974&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40dcloudio%2Ftypes%2Fdownload%2F%40dcloudio%2Ftypes-2.0.21.tgz#ca56f5962ea1d746e325289933461c84261800fe"
   integrity sha1-ylb1li6h10bjJSiZM0YchCYYAP4=
@@ -7719,6 +7719,13 @@ lru-cache@^6.0.0:
   integrity sha1-bW/mVw69lqr5D8rR2vo7JWbbOpQ=
   dependencies:
     yallist "^4.0.0"
+
+luch-request@^3.0.5:
+  version "3.0.5"
+  resolved "https://registry.npm.taobao.org/luch-request/download/luch-request-3.0.5.tgz#13f25661166b3ce7c861f1a11d3fc6990bc85b28"
+  integrity sha1-E/JWYRZrPOfIYfGhHT/GmQvIWyg=
+  dependencies:
+    "@dcloudio/types" "^2.0.16"
 
 make-dir@^2.0.0, make-dir@^2.1.0:
   version "2.1.0"

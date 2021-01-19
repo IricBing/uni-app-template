@@ -75,6 +75,7 @@
     "flyio",
     "ifdef",
     "ifndef",
+    "luch",
     "miniprogram",
     "mixins",
     "nprogress",
