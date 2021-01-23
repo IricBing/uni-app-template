@@ -2,7 +2,9 @@ import Vue from 'vue';
 import App from './App';
 import { router, RouterMount } from './router/guard';
 import store from './store';
+import uView from 'uview-ui';
 
+Vue.use(uView);
 Vue.use(router);
 
 Vue.config.productionTip = false;
