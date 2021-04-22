@@ -5,6 +5,7 @@ module.exports = {
       path: 'register',
       title: '注册',
       name: 'register',
+      home: true,
       style: {
         navigationBarTextStyle: 'black'
       },

@@ -4,6 +4,7 @@
   "private": true,
   "author": "Iric<iricbing@gmail.com>",
   "scripts": {
+    "postinstall": "husky install",
     "serve": "npm run dev:h5",
     "build": "npm run build:h5",
     "build:pages": "node src/router/build.js",
@@ -90,13 +91,13 @@
     "@vue/eslint-config-prettier": "^6.0.0",
     "babel-eslint": "^10.1.0",
     "babel-plugin-import": "^1.11.0",
-    "cross-env": "^7.0.2",
+    "cross-env": "^7.0.3",
     "eslint": "^7.17.0",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^7.4.1",
-    "husky": "^4.3.7",
+    "husky": "^6.0.0",
     "jest": "^25.4.0",
-    "lint-staged": "^10.5.3",
+    "lint-staged": "^10.5.4",
     "mini-types": "*",
     "miniprogram-api-typings": "*",
     "postcss-comment": "^2.0.0",
@@ -111,15 +112,5 @@
   ],
   "uni-app": {
     "scripts": {}
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.{js,vue}": [
-      "cross-env NODE_ENV=production vue-cli-service lint"
-    ]
   }
 }
